@@ -1,0 +1,6 @@
+module Pods_tradingBotStoryboard {
+  umbrella header "Pods-tradingBotStoryboard-umbrella.h"
+
+  export *
+  module * { export * }
+}

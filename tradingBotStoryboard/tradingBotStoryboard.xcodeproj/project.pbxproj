@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8476369025E541A6008C9311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476368F25E541A6008C9311 /* AppDelegate.swift */; };
+		8476369225E541A6008C9311 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476369125E541A6008C9311 /* SceneDelegate.swift */; };
+		8476369425E541A6008C9311 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476369325E541A6008C9311 /* ViewController.swift */; };
+		8476369725E541A6008C9311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8476369525E541A6008C9311 /* Main.storyboard */; };
+		8476369925E541A6008C9311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8476369825E541A6008C9311 /* Assets.xcassets */; };
+		8476369C25E541A6008C9311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8476369A25E541A6008C9311 /* LaunchScreen.storyboard */; };
+		847636A725E541A7008C9311 /* tradingBotStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847636A625E541A7008C9311 /* tradingBotStoryboardTests.swift */; };
+		847636B225E541A7008C9311 /* tradingBotStoryboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847636B125E541A7008C9311 /* tradingBotStoryboardUITests.swift */; };
+		847636E225E54761008C9311 /* MainDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847636E125E54761008C9311 /* MainDataManager.swift */; };
+		8476375425E54A21008C9311 /* balanceInqueryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476375325E54A21008C9311 /* balanceInqueryResponse.swift */; };
+		F50A956640C9AA2CD1BDCF6F /* libPods-tradingBotStoryboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EFB37471ACF46A148E1456 /* libPods-tradingBotStoryboard.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		847636A325E541A7008C9311 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8476368425E541A6008C9311 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8476368B25E541A6008C9311;
+			remoteInfo = tradingBotStoryboard;
+		};
+		847636AE25E541A7008C9311 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8476368425E541A6008C9311 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8476368B25E541A6008C9311;
+			remoteInfo = tradingBotStoryboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A6688B9AB1F4ACDD722E1CE /* Pods-tradingBotStoryboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tradingBotStoryboard.debug.xcconfig"; path = "Target Support Files/Pods-tradingBotStoryboard/Pods-tradingBotStoryboard.debug.xcconfig"; sourceTree = "<group>"; };
+		74EFB37471ACF46A148E1456 /* libPods-tradingBotStoryboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tradingBotStoryboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8476368C25E541A6008C9311 /* tradingBotStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tradingBotStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8476368F25E541A6008C9311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8476369125E541A6008C9311 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8476369325E541A6008C9311 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8476369625E541A6008C9311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8476369825E541A6008C9311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8476369B25E541A6008C9311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8476369D25E541A6008C9311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847636A225E541A7008C9311 /* tradingBotStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tradingBotStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		847636A625E541A7008C9311 /* tradingBotStoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tradingBotStoryboardTests.swift; sourceTree = "<group>"; };
+		847636A825E541A7008C9311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847636AD25E541A7008C9311 /* tradingBotStoryboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tradingBotStoryboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		847636B125E541A7008C9311 /* tradingBotStoryboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tradingBotStoryboardUITests.swift; sourceTree = "<group>"; };
+		847636B325E541A7008C9311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847636E125E54761008C9311 /* MainDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataManager.swift; sourceTree = "<group>"; };
+		8476375325E54A21008C9311 /* balanceInqueryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = balanceInqueryResponse.swift; sourceTree = "<group>"; };
+		F784C2E79F33BCF2992231ED /* Pods-tradingBotStoryboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tradingBotStoryboard.release.xcconfig"; path = "Target Support Files/Pods-tradingBotStoryboard/Pods-tradingBotStoryboard.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8476368925E541A6008C9311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50A956640C9AA2CD1BDCF6F /* libPods-tradingBotStoryboard.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8476369F25E541A7008C9311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847636AA25E541A7008C9311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		440AD6782A9FA8D39E8EB3E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74EFB37471ACF46A148E1456 /* libPods-tradingBotStoryboard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8476368325E541A6008C9311 = {
+			isa = PBXGroup;
+			children = (
+				847636DE25E5470D008C9311 /* DataManager */,
+				8476368E25E541A6008C9311 /* tradingBotStoryboard */,
+				847636A525E541A7008C9311 /* tradingBotStoryboardTests */,
+				847636B025E541A7008C9311 /* tradingBotStoryboardUITests */,
+				8476368D25E541A6008C9311 /* Products */,
+				9920B656911DAF3ADFC95C73 /* Pods */,
+				440AD6782A9FA8D39E8EB3E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8476368D25E541A6008C9311 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8476368C25E541A6008C9311 /* tradingBotStoryboard.app */,
+				847636A225E541A7008C9311 /* tradingBotStoryboardTests.xctest */,
+				847636AD25E541A7008C9311 /* tradingBotStoryboardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8476368E25E541A6008C9311 /* tradingBotStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				8476368F25E541A6008C9311 /* AppDelegate.swift */,
+				8476369125E541A6008C9311 /* SceneDelegate.swift */,
+				8476369325E541A6008C9311 /* ViewController.swift */,
+				8476369525E541A6008C9311 /* Main.storyboard */,
+				8476369825E541A6008C9311 /* Assets.xcassets */,
+				8476369A25E541A6008C9311 /* LaunchScreen.storyboard */,
+				8476369D25E541A6008C9311 /* Info.plist */,
+			);
+			path = tradingBotStoryboard;
+			sourceTree = "<group>";
+		};
+		847636A525E541A7008C9311 /* tradingBotStoryboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				847636A625E541A7008C9311 /* tradingBotStoryboardTests.swift */,
+				847636A825E541A7008C9311 /* Info.plist */,
+			);
+			path = tradingBotStoryboardTests;
+			sourceTree = "<group>";
+		};
+		847636B025E541A7008C9311 /* tradingBotStoryboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				847636B125E541A7008C9311 /* tradingBotStoryboardUITests.swift */,
+				847636B325E541A7008C9311 /* Info.plist */,
+			);
+			path = tradingBotStoryboardUITests;
+			sourceTree = "<group>";
+		};
+		847636DE25E5470D008C9311 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				847636DF25E5472B008C9311 /* Entity */,
+				847636E125E54761008C9311 /* MainDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		847636DF25E5472B008C9311 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8476375325E54A21008C9311 /* balanceInqueryResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9920B656911DAF3ADFC95C73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A6688B9AB1F4ACDD722E1CE /* Pods-tradingBotStoryboard.debug.xcconfig */,
+				F784C2E79F33BCF2992231ED /* Pods-tradingBotStoryboard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8476368B25E541A6008C9311 /* tradingBotStoryboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847636B625E541A7008C9311 /* Build configuration list for PBXNativeTarget "tradingBotStoryboard" */;
+			buildPhases = (
+				E23AB5EFC9AA0D6F95C11929 /* [CP] Check Pods Manifest.lock */,
+				8476368825E541A6008C9311 /* Sources */,
+				8476368925E541A6008C9311 /* Frameworks */,
+				8476368A25E541A6008C9311 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tradingBotStoryboard;
+			productName = tradingBotStoryboard;
+			productReference = 8476368C25E541A6008C9311 /* tradingBotStoryboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		847636A125E541A7008C9311 /* tradingBotStoryboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847636B925E541A7008C9311 /* Build configuration list for PBXNativeTarget "tradingBotStoryboardTests" */;
+			buildPhases = (
+				8476369E25E541A7008C9311 /* Sources */,
+				8476369F25E541A7008C9311 /* Frameworks */,
+				847636A025E541A7008C9311 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				847636A425E541A7008C9311 /* PBXTargetDependency */,
+			);
+			name = tradingBotStoryboardTests;
+			productName = tradingBotStoryboardTests;
+			productReference = 847636A225E541A7008C9311 /* tradingBotStoryboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		847636AC25E541A7008C9311 /* tradingBotStoryboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847636BC25E541A7008C9311 /* Build configuration list for PBXNativeTarget "tradingBotStoryboardUITests" */;
+			buildPhases = (
+				847636A925E541A7008C9311 /* Sources */,
+				847636AA25E541A7008C9311 /* Frameworks */,
+				847636AB25E541A7008C9311 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				847636AF25E541A7008C9311 /* PBXTargetDependency */,
+			);
+			name = tradingBotStoryboardUITests;
+			productName = tradingBotStoryboardUITests;
+			productReference = 847636AD25E541A7008C9311 /* tradingBotStoryboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8476368425E541A6008C9311 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					8476368B25E541A6008C9311 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					847636A125E541A7008C9311 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 8476368B25E541A6008C9311;
+					};
+					847636AC25E541A7008C9311 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 8476368B25E541A6008C9311;
+					};
+				};
+			};
+			buildConfigurationList = 8476368725E541A6008C9311 /* Build configuration list for PBXProject "tradingBotStoryboard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8476368325E541A6008C9311;
+			productRefGroup = 8476368D25E541A6008C9311 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8476368B25E541A6008C9311 /* tradingBotStoryboard */,
+				847636A125E541A7008C9311 /* tradingBotStoryboardTests */,
+				847636AC25E541A7008C9311 /* tradingBotStoryboardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8476368A25E541A6008C9311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8476369C25E541A6008C9311 /* LaunchScreen.storyboard in Resources */,
+				8476369925E541A6008C9311 /* Assets.xcassets in Resources */,
+				8476369725E541A6008C9311 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847636A025E541A7008C9311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847636AB25E541A7008C9311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E23AB5EFC9AA0D6F95C11929 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tradingBotStoryboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8476368825E541A6008C9311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8476369425E541A6008C9311 /* ViewController.swift in Sources */,
+				8476375425E54A21008C9311 /* balanceInqueryResponse.swift in Sources */,
+				8476369025E541A6008C9311 /* AppDelegate.swift in Sources */,
+				847636E225E54761008C9311 /* MainDataManager.swift in Sources */,
+				8476369225E541A6008C9311 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8476369E25E541A7008C9311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847636A725E541A7008C9311 /* tradingBotStoryboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847636A925E541A7008C9311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847636B225E541A7008C9311 /* tradingBotStoryboardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		847636A425E541A7008C9311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8476368B25E541A6008C9311 /* tradingBotStoryboard */;
+			targetProxy = 847636A325E541A7008C9311 /* PBXContainerItemProxy */;
+		};
+		847636AF25E541A7008C9311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8476368B25E541A6008C9311 /* tradingBotStoryboard */;
+			targetProxy = 847636AE25E541A7008C9311 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8476369525E541A6008C9311 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8476369625E541A6008C9311 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8476369A25E541A6008C9311 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8476369B25E541A6008C9311 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		847636B425E541A7008C9311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		847636B525E541A7008C9311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		847636B725E541A7008C9311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A6688B9AB1F4ACDD722E1CE /* Pods-tradingBotStoryboard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 234KYHSB3Y;
+				INFOPLIST_FILE = tradingBotStoryboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = litong.tradingBotStoryboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		847636B825E541A7008C9311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F784C2E79F33BCF2992231ED /* Pods-tradingBotStoryboard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 234KYHSB3Y;
+				INFOPLIST_FILE = tradingBotStoryboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = litong.tradingBotStoryboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		847636BA25E541A7008C9311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 234KYHSB3Y;
+				INFOPLIST_FILE = tradingBotStoryboardTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = litong.tradingBotStoryboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tradingBotStoryboard.app/tradingBotStoryboard";
+			};
+			name = Debug;
+		};
+		847636BB25E541A7008C9311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 234KYHSB3Y;
+				INFOPLIST_FILE = tradingBotStoryboardTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = litong.tradingBotStoryboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tradingBotStoryboard.app/tradingBotStoryboard";
+			};
+			name = Release;
+		};
+		847636BD25E541A7008C9311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 234KYHSB3Y;
+				INFOPLIST_FILE = tradingBotStoryboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = litong.tradingBotStoryboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tradingBotStoryboard;
+			};
+			name = Debug;
+		};
+		847636BE25E541A7008C9311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 234KYHSB3Y;
+				INFOPLIST_FILE = tradingBotStoryboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = litong.tradingBotStoryboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tradingBotStoryboard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8476368725E541A6008C9311 /* Build configuration list for PBXProject "tradingBotStoryboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847636B425E541A7008C9311 /* Debug */,
+				847636B525E541A7008C9311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847636B625E541A7008C9311 /* Build configuration list for PBXNativeTarget "tradingBotStoryboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847636B725E541A7008C9311 /* Debug */,
+				847636B825E541A7008C9311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847636B925E541A7008C9311 /* Build configuration list for PBXNativeTarget "tradingBotStoryboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847636BA25E541A7008C9311 /* Debug */,
+				847636BB25E541A7008C9311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847636BC25E541A7008C9311 /* Build configuration list for PBXNativeTarget "tradingBotStoryboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847636BD25E541A7008C9311 /* Debug */,
+				847636BE25E541A7008C9311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8476368425E541A6008C9311 /* Project object */;
+}

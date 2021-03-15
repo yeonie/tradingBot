@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84FACFB925E53D8700D34D68 /* tradingBotAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FACFB825E53D8700D34D68 /* tradingBotAppApp.swift */; };
+		84FACFBB25E53D8700D34D68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FACFBA25E53D8700D34D68 /* ContentView.swift */; };
+		84FACFBD25E53D8800D34D68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FACFBC25E53D8800D34D68 /* Assets.xcassets */; };
+		84FACFC025E53D8800D34D68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FACFBF25E53D8800D34D68 /* Preview Assets.xcassets */; };
+		84FACFCB25E53D8900D34D68 /* tradingBotAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FACFCA25E53D8900D34D68 /* tradingBotAppTests.swift */; };
+		84FACFD625E53D8900D34D68 /* tradingBotAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FACFD525E53D8900D34D68 /* tradingBotAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84FACFC725E53D8900D34D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84FACFAD25E53D8700D34D68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84FACFB425E53D8700D34D68;
+			remoteInfo = tradingBotApp;
+		};
+		84FACFD225E53D8900D34D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84FACFAD25E53D8700D34D68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84FACFB425E53D8700D34D68;
+			remoteInfo = tradingBotApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84FACFB525E53D8700D34D68 /* tradingBotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tradingBotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FACFB825E53D8700D34D68 /* tradingBotAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tradingBotAppApp.swift; sourceTree = "<group>"; };
+		84FACFBA25E53D8700D34D68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84FACFBC25E53D8800D34D68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84FACFBF25E53D8800D34D68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84FACFC125E53D8800D34D68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FACFC625E53D8900D34D68 /* tradingBotAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tradingBotAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FACFCA25E53D8900D34D68 /* tradingBotAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tradingBotAppTests.swift; sourceTree = "<group>"; };
+		84FACFCC25E53D8900D34D68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FACFD125E53D8900D34D68 /* tradingBotAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tradingBotAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FACFD525E53D8900D34D68 /* tradingBotAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tradingBotAppUITests.swift; sourceTree = "<group>"; };
+		84FACFD725E53D8900D34D68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84FACFB225E53D8700D34D68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FACFC325E53D8900D34D68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FACFCE25E53D8900D34D68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84FACFAC25E53D8700D34D68 = {
+			isa = PBXGroup;
+			children = (
+				84FACFB725E53D8700D34D68 /* tradingBotApp */,
+				84FACFC925E53D8900D34D68 /* tradingBotAppTests */,
+				84FACFD425E53D8900D34D68 /* tradingBotAppUITests */,
+				84FACFB625E53D8700D34D68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84FACFB625E53D8700D34D68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84FACFB525E53D8700D34D68 /* tradingBotApp.app */,
+				84FACFC625E53D8900D34D68 /* tradingBotAppTests.xctest */,
+				84FACFD125E53D8900D34D68 /* tradingBotAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84FACFB725E53D8700D34D68 /* tradingBotApp */ = {
+			isa = PBXGroup;
+			children = (
+				84FACFB825E53D8700D34D68 /* tradingBotAppApp.swift */,
+				84FACFBA25E53D8700D34D68 /* ContentView.swift */,
+				84FACFBC25E53D8800D34D68 /* Assets.xcassets */,
+				84FACFC125E53D8800D34D68 /* Info.plist */,
+				84FACFBE25E53D8800D34D68 /* Preview Content */,
+			);
+			path = tradingBotApp;
+			sourceTree = "<group>";
+		};
+		84FACFBE25E53D8800D34D68 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				84FACFBF25E53D8800D34D68 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84FACFC925E53D8900D34D68 /* tradingBotAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				84FACFCA25E53D8900D34D68 /* tradingBotAppTests.swift */,
+				84FACFCC25E53D8900D34D68 /* Info.plist */,
+			);
+			path = tradingBotAppTests;
+			sourceTree = "<group>";
+		};
+		84FACFD425E53D8900D34D68 /* tradingBotAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84FACFD525E53D8900D34D68 /* tradingBotAppUITests.swift */,
+				84FACFD725E53D8900D34D68 /* Info.plist */,
+			);
+			path = tradingBotAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84FACFB425E53D8700D34D68 /* tradingBotApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FACFDA25E53D8900D34D68 /* Build configuration list for PBXNativeTarget "tradingBotApp" */;
+			buildPhases = (
+				84FACFB125E53D8700D34D68 /* Sources */,
+				84FACFB225E53D8700D34D68 /* Frameworks */,
+				84FACFB325E53D8700D34D68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tradingBotApp;
+			productName = tradingBotApp;
+			productReference = 84FACFB525E53D8700D34D68 /* tradingBotApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84FACFC525E53D8900D34D68 /* tradingBotAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FACFDD25E53D8900D34D68 /* Build configuration list for PBXNativeTarget "tradingBotAppTests" */;
+			buildPhases = (
+				84FACFC225E53D8900D34D68 /* Sources */,
+				84FACFC325E53D8900D34D68 /* Frameworks */,
+				84FACFC425E53D8900D34D68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84FACFC825E53D8900D34D68 /* PBXTargetDependency */,
+			);
+			name = tradingBotAppTests;
+			productName = tradingBotAppTests;
+			productReference = 84FACFC625E53D8900D34D68 /* tradingBotAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84FACFD025E53D8900D34D68 /* tradingBotAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FACFE025E53D8900D34D68 /* Build configuration list for PBXNativeTarget "tradingBotAppUITests" */;
+			buildPhases = (
+				84FACFCD25E53D8900D34D68 /* Sources */,
+				84FACFCE25E53D8900D34D68 /* Frameworks */,
+				84FACFCF25E53D8900D34D68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84FACFD325E53D8900D34D68 /* PBXTargetDependency */,
+			);
+			name = tradingBotAppUITests;
+			productName = tradingBotAppUITests;
+			productReference = 84FACFD125E53D8900D34D68 /* tradingBotAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84FACFAD25E53D8700D34D68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					84FACFB425E53D8700D34D68 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					84FACFC525E53D8900D34D68 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 84FACFB425E53D8700D34D68;
+					};
+					84FACFD025E53D8900D34D68 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 84FACFB425E53D8700D34D68;
+					};
+				};
+			};
+			buildConfigurationList = 84FACFB025E53D8700D34D68 /* Build configuration list for PBXProject "tradingBotApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84FACFAC25E53D8700D34D68;
+			productRefGroup = 84FACFB625E53D8700D34D68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84FACFB425E53D8700D34D68 /* tradingBotApp */,
+				84FACFC525E53D8900D34D68 /* tradingBotAppTests */,
+				84FACFD025E53D8900D34D68 /* tradingBotAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84FACFB325E53D8700D34D68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FACFC025E53D8800D34D68 /* Preview Assets.xcassets in Resources */,
+				84FACFBD25E53D8800D34D68 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FACFC425E53D8900D34D68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FACFCF25E53D8900D34D68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84FACFB125E53D8700D34D68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FACFBB25E53D8700D34D68 /* ContentView.swift in Sources */,
+				84FACFB925E53D8700D34D68 /* tradingBotAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FACFC225E53D8900D34D68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FACFCB25E53D8900D34D68 /* tradingBotAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FACFCD25E53D8900D34D68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FACFD625E53D8900D34D68 /* tradingBotAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84FACFC825E53D8900D34D68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84FACFB425E53D8700D34D68 /* tradingBotApp */;
+			targetProxy = 84FACFC725E53D8900D34D68 /* PBXContainerItemProxy */;
+		};
+		84FACFD325E53D8900D34D68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84FACFB425E53D8700D34D68 /* tradingBotApp */;
+			targetProxy = 84FACFD225E53D8900D34D68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84FACFD825E53D8900D34D68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84FACFD925E53D8900D34D68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84FACFDB25E53D8900D34D68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"tradingBotApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = tradingBotApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = litong.tradingBotApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84FACFDC25E53D8900D34D68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"tradingBotApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = tradingBotApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = litong.tradingBotApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84FACFDE25E53D8900D34D68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tradingBotAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = litong.tradingBotAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tradingBotApp.app/tradingBotApp";
+			};
+			name = Debug;
+		};
+		84FACFDF25E53D8900D34D68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tradingBotAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = litong.tradingBotAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tradingBotApp.app/tradingBotApp";
+			};
+			name = Release;
+		};
+		84FACFE125E53D8900D34D68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tradingBotAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = litong.tradingBotAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tradingBotApp;
+			};
+			name = Debug;
+		};
+		84FACFE225E53D8900D34D68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tradingBotAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = litong.tradingBotAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tradingBotApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84FACFB025E53D8700D34D68 /* Build configuration list for PBXProject "tradingBotApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FACFD825E53D8900D34D68 /* Debug */,
+				84FACFD925E53D8900D34D68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FACFDA25E53D8900D34D68 /* Build configuration list for PBXNativeTarget "tradingBotApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FACFDB25E53D8900D34D68 /* Debug */,
+				84FACFDC25E53D8900D34D68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FACFDD25E53D8900D34D68 /* Build configuration list for PBXNativeTarget "tradingBotAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FACFDE25E53D8900D34D68 /* Debug */,
+				84FACFDF25E53D8900D34D68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FACFE025E53D8900D34D68 /* Build configuration list for PBXNativeTarget "tradingBotAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FACFE125E53D8900D34D68 /* Debug */,
+				84FACFE225E53D8900D34D68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84FACFAD25E53D8700D34D68 /* Project object */;
+}

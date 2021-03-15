@@ -1,0 +1,22 @@
+{
+  "name": "tradingbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "date-utils": "^1.2.21",
+    "jsonwebtoken": "^8.5.1",
+    "node-fetch": "^2.6.1",
+    "node-schedule": "^2.0.0",
+    "node-telegram-bot-api": "^0.51.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}
