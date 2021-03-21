@@ -1,6 +1,8 @@
 const request = require('request')
 const uuidv4 = require("uuid/v4")
+const crypto = require('crypto')
 const sign = require('jsonwebtoken').sign
+const queryEncode = require("querystring").encode
 
 //매 시간 n분 마다 수행
 // var j = schedule.scheduleJob(rule, function(){
@@ -37,12 +39,47 @@ const access_key = "NRHitfNgzvZ0W92VeVo0IQgwLxy2IxnU9KEVO8l0"
 const secret_key = "UoG2V6iafVo2wpexTotWWj4wxajuRgcIj9ajbwNh"
 const server_url = "https://api.upbit.com"
 
-//업비트 payload , token 연결
 const payload = {
     access_key: access_key,
     nonce: uuidv4(),
 }
 const token = sign(payload, secret_key)
+
+
+
+const orderBody = {
+    market: 'KRW-BTC',
+    side: 'bid',
+    volume: '0.01',
+    price: '100',
+    ord_type: 'limit',
+}
+// bid : 매수
+// ask : 매도
+
+//업비트 payload , token 연결 (주문)
+const query = queryEncode(orderBody)
+
+const hash = crypto.createHash('sha512')
+const queryHash = hash.update(query, 'utf-8').digest('hex')
+
+
+//업비트 payload , token 연결
+const orderPayload = {
+    access_key: access_key,
+    nonce: uuidv4(),
+    query_hash: queryHash,
+    query_hash_alg: 'SHA512',
+}
+const orderToken = sign(orderPayload, secret_key)
+
+//주문
+const orderOptions = {
+    method: "POST",
+    url: server_url + "/v1/orders",
+    headers: {Authorization: `Bearer ${orderToken}`},
+    json: orderBody
+}
 
 //자산 request option
 const options = {
@@ -51,7 +88,18 @@ const options = {
     headers: {Authorization: `Bearer ${token}`},
 }
 
+
+request(orderOptions, (error, response, orderBody) => {
+    if (error) throw new Error(error)
+    console.log(orderBody)
+})
+
+
+
+
+
 var lists = ['currency','balance','locked','avg_buy_price_modified','unit_currency'];
+
 
 //자산 request
 request(options, (error, response, body) => {
@@ -116,7 +164,7 @@ fetch(btcMinurl)
           console.log("함수 안 현재가격 : " + CurPrice);
           if(CurPrice>PrePrice){
             var chai = parseInt(CurPrice - PrePrice);
-            console.log("처음 실행했을 때 보다 " + chai+ "원 만큼 올랐어요.");
+            console.log("처음 실행했을 때 보다 " + chai + "원 만큼 올랐어요.");
             if(CurPrice>=PrePrice*1.01){
               console.log("처음 실행했을 때 보다 1%이상 올랐어요.");
               bot.onText(/\!시(.+)/, (msg) => {
