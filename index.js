@@ -92,7 +92,6 @@ const options = {
 request(orderOptions, (error, response, orderBody) => {
     if (error) throw new Error(error)
     console.log(orderBody);
-    console.log(response);
 })
 
 
@@ -166,6 +165,11 @@ fetch(btcMinurl)
           if(CurPrice>PrePrice){
             var chai = parseInt(CurPrice - PrePrice);
             console.log("처음 실행했을 때 보다 " + chai + "원 만큼 올랐어요.");
+            bot.onText(/\!시(.+)/, (msg) => {
+              const chatId = msg.chat.id;
+              const resp = "처음 실행했을 때 보다"+chai+"원 만큼 올랐습니다.";
+              bot.sendMessage(chatId, resp);
+            });
             if(CurPrice>=PrePrice*1.01){
               console.log("처음 실행했을 때 보다 1%이상 올랐어요.");
               bot.onText(/\!시(.+)/, (msg) => {
@@ -186,17 +190,16 @@ fetch(btcMinurl)
             var chai = parseInt(PrePrice - CurPrice);
             chai = Number(chai);
             console.log("처음 실행했을 때 보다 " + chai + "원 만큼 떨어졌어요");
+            bot.onText(/\!시(.+)/, (msg) => {
+              const chatId = msg.chat.id;
+              const resp = "처음 실행했을 때 보다"+chai+"원 만큼 떨어졌습니다.";
+              bot.sendMessage(chatId, resp);
+            });
             if(PrePrice>=CurPrice*1.01){
               console.log("처음 실행했을 때 보다 1%이상 떨어졌어요..");
               bot.onText(/\!시(.+)/, (msg) => {
                 const chatId = msg.chat.id;
                 const resp = "처음 실행했을 때 보다 1%이상 떨어졌어요..";
-                bot.sendMessage(chatId, resp);
-              });
-            }else{
-              bot.onText(/\!시(.+)/, (msg) => {
-                const chatId = msg.chat.id;
-                const resp = "처음 실행했을 때 보다 " + chai + "원 만큼 떨어졌어요";
                 bot.sendMessage(chatId, resp);
               });
             }
