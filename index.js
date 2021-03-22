@@ -50,9 +50,9 @@ const token = sign(payload, secret_key)
 const orderBody = {
     market: 'KRW-BTC',
     side: 'bid',
-    volume: '0.01',
+    volume: '0.00003',
     price: '100',
-    ord_type: 'limit',
+    ord_type: 'price',
 }
 // bid : 매수
 // ask : 매도
@@ -91,7 +91,8 @@ const options = {
 
 request(orderOptions, (error, response, orderBody) => {
     if (error) throw new Error(error)
-    console.log(orderBody)
+    console.log(orderBody);
+    console.log(response);
 })
 
 
