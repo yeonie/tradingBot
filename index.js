@@ -4,6 +4,15 @@ const crypto = require('crypto')
 const sign = require('jsonwebtoken').sign
 const queryEncode = require("querystring").encode
 
+//피드백
+
+// 음.양봉 세개에다가 몇퍼센트 떨어졌다 올랐다 추가.
+// 추가적인 명령어 없이 보내주기.
+
+// 예비환자들한테 센서 팔고 그 데이터 받아서 토큰 보상.
+// 세종대학교 - 홍익희님 : 아빠한테 보여드릴것.
+
+
 //매 시간 n분 마다 수행
 // var j = schedule.scheduleJob(rule, function(){
 //          console.log('1분지났다');
@@ -12,6 +21,11 @@ var PrePrice = 777;
 global.PrePrice = PrePrice;
 var CurPrice = 5959;
 global.CurPrice = CurPrice;
+
+var plus = 0;
+global.plus = plus;
+var minus = 0;
+global.minus = minus;
 
 
 // var j = schedule.scheduleJob(rule, function(){
@@ -111,7 +125,7 @@ request(options, (error, response, body) => {
       // of the message
       const chatId = msg.chat.id;
       // const balanced = "something";
-      const resp = "부자되세요!" + body; // the captured "whatever"
+      const resp = "부자되세요!"+chatId; // the captured "whatever"
 
       // send back the matched "whatever" to the chat
       bot.sendMessage(chatId, resp);
@@ -144,6 +158,8 @@ var list = ['market',
 const fetch = require('node-fetch');
 const BTCoptions = {method: 'GET', qs: {market: 'KRW-BTC', count: '1'}};
 
+bot.sendMessage
+
 fetch(btcMinurl)
   .then(res => res.json())
   .then(data => {
@@ -172,16 +188,10 @@ fetch(btcMinurl)
             });
             if(CurPrice>=PrePrice*1.01){
               console.log("처음 실행했을 때 보다 1%이상 올랐어요.");
+              bot.sendMessage(1600668896, "처음 실행했을 때 보다 1%이상 올랐어요.");
               bot.onText(/\!시(.+)/, (msg) => {
                 const chatId = msg.chat.id;
                 const resp = "처음 실행했을 때 보다 1%이상 올랐어요.";
-                bot.sendMessage(chatId, resp);
-              });
-            }
-            else{
-              bot.onText(/\!시(.+)/, (msg) => {
-                const chatId = msg.chat.id;
-                const resp = "처음 실행했을 때 보다 " + chai+ "원 만큼 올랐어요.";
                 bot.sendMessage(chatId, resp);
               });
             }
@@ -194,6 +204,7 @@ fetch(btcMinurl)
               const chatId = msg.chat.id;
               const resp = "처음 실행했을 때 보다"+chai+"원 만큼 떨어졌습니다.";
               bot.sendMessage(chatId, resp);
+
             });
             if(PrePrice>=CurPrice*1.01){
               console.log("처음 실행했을 때 보다 1%이상 떨어졌어요..");
@@ -210,6 +221,14 @@ fetch(btcMinurl)
 
     return PrePrice;
   })
+
+
+if(plus >= 3){
+  bot.sendMessage(1600668896, "양봉이 연속 3개에요.");
+}
+else if(minus >= 3){
+  bot.sendMessage(1600668896, "음봉이 연속 3개에요.");
+}
   //함수 처리
   // var j = schedule.scheduleJob(rule, function(){
   //
